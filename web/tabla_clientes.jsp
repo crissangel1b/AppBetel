@@ -27,7 +27,7 @@
     <!--\\\\\\\Cargar la tabla\\\\\\-->
      <div class="pull-left breadcrumb_admin clear_both">
         <div class="pull-left page_title theme_color">
-          <h4><i  class="glyphicon glyphicon-briefcase"></i> Proveedores </h4>
+          <h4><i   class="fa fa-thumb-tack"></i> Clientes </h4>
           
         </div>
        
@@ -75,14 +75,15 @@
                               <table aria-describedby="editable-sample_info" class="table" id="editable-sample">
                               <thead>
                                 <tr>
-                                    <th>NIT</th>
-                                    <th>Razon social</th>
-                                    <th >E-mail</th> 
-                                    <th>Telefono</th>
-                                   <th>Fecha ingreso</th>
-                                    <th>Ciudad</th>
-                                    <th>Estado</th>
-                                    <th></th>
+                                   <th>Ruta</th>
+                                   <th>Nombres</th> 
+                                   <th>E-mail</th>
+                                   <th>telefono</th>
+                                   <th>Fecha Ingreso</th>
+                                   <th>Ciudad</th>
+                                   <th>Estado</th>
+                                   <th></th>
+                                   
                                    
                                 </tr>
                                </thead>
@@ -155,21 +156,10 @@
         </div><!--/col-md-12--> 
       </div>
   </div>
-      <!--\\\\\\\ container  end \\\\\\-->
-    </div>
-    <!--\\\\\\\ content panel end \\\\\\-->
-  </div>
-  <!--\\\\\\\ inner end\\\\\\-->
-</div>
-<!--\\\\\\\ wrapper end\\\\\\-->
+     
+ 
+ 
 <!-- Modal -->
-
-
-
-<!-- sidebar chats -->
-
-
-
 
 <div class="panel-body">
 <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -179,7 +169,7 @@
         <div class="block-web">
             <div class="header ">
                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="content-header">Nuevo Proveedor</h3>
+              <h3 class="content-header">Nuevo Cliente</h3>
             </div>
             <div class="porlets-content">
               <div class="basic-wizard" id="progressWizard">
@@ -189,149 +179,148 @@
                   <li class=""><a data-toggle="tab" href="#Direc">Direccion</a></li>
                 </ul>
                 <div class="tab-content">
-                 <br>
-                  <div id="Empresa" class="tab-pane fade active in">
-                    <form class="form-horizontal">
-                            <fieldset >
-                        <div class="form-group">                                        
-                          <label for="exampleInputName2" class="col-sm-3 control-label">NIT</label>
-                          <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="NIT" value="" name="">
-                          </div>    
+                  <br>
+                  <div id="Empresa"class="tab-pane fade active in">
+                      <form class="form-horizontal">
+                        <fieldset >
+                    <div class="form-group">                                        
+                      <label for="exampleInputName2" class="col-sm-3 control-label">Ruta</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" id="Ruta" placeholder="Ruta">
+                      </div>    
+                    </div>
+                        </fieldset>    
+                      <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">E-mail</label>
+                      <div class="col-sm-8">
+                      <div class="input-group">
+                        <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="E-mail">                                        
+                      </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">Telefono</label>
+                        <div class="col-sm-8">
+                         <div class="input-group"> 
+                          <div class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></div>
+                          <input type="text" class="form-control" id="exampleInputAmount">
                         </div>
-                            </fieldset>    
-                        <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Razon Social</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="" placeholder="Razon Social">
-                          </div>
-                        </div>                                                                           
-
-                         <div class="form-group">
-                          <label for="exampleInputAmount" class="col-sm-3 control-label">E-mail</label>
-                          <div class="col-sm-8">
-                          <div class="input-group">
-                            <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="E-mail">                                        
-                          </div>
-                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">Fecha ingreso</label>
+                        <div class="col-sm-8">
+                         <div class="input-group"> 
+                          <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                          <input type="text" class="form-control datepicker" name="purchase_date" value="14/08/2017" disabled="">
                         </div>
-                        <div class="form-group">
-                          <label for="exampleInputAmount" class="col-sm-3 control-label">Telefono</label>
-                            <div class="col-sm-8">
-                             <div class="input-group"> 
-                              <div class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></div>
-                              <input type="text" class="form-control" id="exampleInputAmount">
-                            </div>
-                          </div>
-                        </div>
-
-                     <div class="form-group">
-                          <label for="exampleInputAmount" class="col-sm-3 control-label">Fecha ingreso</label>
-                            <div class="col-sm-8">
-                             <div class="input-group"> 
-                              <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                              <input type="text" class="form-control datepicker" name="purchase_date" value="14/08/2017" disabled="">
-                            </div>
-                          </div>
-                        </div>
-                       <fieldset disabled>  
-                        <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Estado</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Activo">
-                          </div>
-                        </div>
-                          </fieldset>            
-                      </form>                                        
+                      </div>
+                    </div>
+                      <fieldset disabled>  
+                    <div class="form-group">
+                      <label for="exampleInputEmail2" class="col-sm-3 control-label">Estado</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Activo">
+                      </div>
+                    </div>
+                      </fieldset>            
+                  </form>                                        
+                                                 
                   </div>
                   <div id="Datos" class="tab-pane">
                      <form class="form-horizontal"> 
-
-                        <div class="form-group">                                        
-                          <label for="exampleInputName2" class="col-sm-3 control-label">Nombres</label>
-                          <div class="col-sm-8">
-                           <div class="input-group">
-                           <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-                           <input type="text" class="form-control" id="exampleInputAmount" placeholder="Nombres">                                        
-                          </div>
-                         </div>    
-                        </div>                                                                                                              
-                       <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Apellidos</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Apellidos">
-                          </div>
-                        </div>
-                                               
-                         <div class="form-group">                                        
-                          <label for="exampleInputName2" class="col-sm-3 control-label">Tipo Documento</label>
-                         <div class="col-sm-8">
-                          <select class="form-control">
-                            <option>- Selecione -</option>
-                            <option>Cédula de Ciudadanía</option>
-                            <option>Cédula de Extranjería</option>
-                          </select>
-                          </div>    
-                        </div>  
-                              
-                      <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Nur Documento</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Numero Documento">
-                          </div>
-                       </div>
-
-                        <div class="form-group">
-                          <label for="exampleInputAmount" class="col-sm-3 control-label">Fecha Nacimiento</label>
-                            <div class="col-sm-8">
-                             <div class="input-group"> 
-                              <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                              <input type="text" class="form-control datepicker" name="purchase_date" value="14/08/2017">
-                            </div>
-                          </div>
-                        </div>
+                                        
                     <div class="form-group">                                        
-                                  <label for="exampleInputName2" class="col-sm-3 control-label">Genero</label>
-                                 <div class="col-sm-8">
-                                  <select class="form-control">
-                                    <option>- Selecione -</option>
-                                    <option>Femenino </option>
-                                    <option>Masculino</option>
-                                  </select>
-                                  </div>    
-                                </div>      
-                       <div class="form-group">
-                          <label for="exampleInputAmount" class="col-sm-3 control-label">Correo Electronico</label>
-                          <div class="col-sm-8">
-                          <div class="input-group">
-                            <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Correo Electronico">                                        
-                          </div>
-                          </div>
-                        </div> 
-                      
-                     </form>
+                      <label for="exampleInputName2" class="col-sm-3 control-label">Nombres</label>
+                      <div class="col-sm-8">
+                       <div class="input-group">
+                       <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                       <input type="text" class="form-control" id="exampleInputAmount" placeholder="Nombres">                                        
+                      </div>
+                     </div>    
+                    </div>                                                                                                              
+                   <div class="form-group">
+                      <label for="exampleInputEmail2" class="col-sm-3 control-label">Apellidos</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Apellidos">
+                      </div>
+                    </div>                     
+                     <div class="form-group">                                        
+                      <label for="exampleInputName2" class="col-sm-3 control-label">Tipo Documento</label>
+                     <div class="col-sm-8">
+                      <select class="form-control">
+                        <option>- Selecione -</option>
+                        <option>Cédula de Ciudadanía</option>
+                        <option>Cédula de Extranjería</option>
+                      </select>
+                      </div>    
+                    </div>                               
+                  <div class="form-group">
+                      <label for="exampleInputEmail2" class="col-sm-3 control-label">Nur Documento</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Numero Documento">
+                      </div>
+                   </div> 
+                    <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">Fecha Nacimiento</label>
+                        <div class="col-sm-8">
+                         <div class="input-group"> 
+                          <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                          <input type="text" class="form-control datepicker" name="purchase_date" value="14/08/2017" >
+                        </div>
+                      </div>
+                    </div> 
+                   <div class="form-group">                                        
+                      <label for="exampleInputName2" class="col-sm-3 control-label">Genero</label>
+                     <div class="col-sm-8">
+                      <select class="form-control">
+                        <option>- Selecione -</option>
+                        <option>Femenino </option>
+                        <option>Masculino</option>
+                      </select>
+                      </div>    
+                    </div>          
+                   <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">Correo Electronico</label>
+                      <div class="col-sm-8">
+                      <div class="input-group">
+                        <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Correo Electronico">                                        
+                      </div>
+                      </div>
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleInputAmount" class="col-sm-3 control-label">Celular</label>
+                      <div class="col-sm-8">
+                      <div class="input-group">
+                        <div class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Celular">                                        
+                      </div>
+                      </div>
+                    </div> 
+
+                  </form>
                   </div>
                     <div id="Direc" class="tab-pane" >
-                    <form class="form-horizontal">      
-                        <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Barrio</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Barrio ">
-                          </div>
-                       </div>      
-
-                         <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Ciudad</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Ciudad ">
-                          </div>
-                       </div> 
-                       
-                     </form>     
+                      <form class="form-horizontal">      
+                <div class="form-group">
+                  <label for="exampleInputEmail2" class="col-sm-3 control-label">Barrio</label>
+                  <div class="col-sm-8">
+                  <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Barrio ">
                   </div>
-                </div>
+               </div>      
+
+                 <div class="form-group">
+                  <label for="exampleInputEmail2" class="col-sm-3 control-label">Ciudad</label>
+                  <div class="col-sm-8">
+                  <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Ciudad ">
+                  </div>
+               </div> 
+
+             </form>     
+                  </div>
+                </div><!-- /tab-content -->
               </div>
                  <div class="modal-footer">
                             <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
@@ -344,7 +333,7 @@
   </div>
   </div>
 </div>
-      
+
    
     <!--\\\\\\\ content panel end \\\\\\-->
     

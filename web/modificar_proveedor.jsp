@@ -1,7 +1,7 @@
 <%-- 
-    Document   : tabla_proveedor
+    Document   : nuevo_proveedor
     Created on : 25/08/2017, 01:09:19 PM
-    Author     : Estudiante
+    Author     : Cristian 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -21,154 +21,15 @@
     <link rel="stylesheet" href="plugins/scroll/nanoscroller.css">
     <link href="plugins/morris/morris.css" rel="stylesheet" />
     </head>
-    <body class="fixed_header left_nav_fixed atm-spmenu-push dark_theme blue_thm" style="background: #f1f1f1">
-   <div class="">
- 
-    <!--\\\\\\\Cargar la tabla\\\\\\-->
-     <div class="pull-left breadcrumb_admin clear_both">
-        <div class="pull-left page_title theme_color">
-          <h4><i  class="glyphicon glyphicon-briefcase"></i> Proveedores </h4>
-          
-        </div>
-       
+    <body class="fixed_header left_nav_fixed atm-spmenu-push dark_theme blue_thm" style="background: #f1f1f1;">
+  <br>
+  <br> 
+
+      <div class="btn-group pull-right">
+          <button href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> </button>
       </div>
-      <!--\\\\\\\ contentpanel start\\\\\\-->      
-       <div class="row">
-        <div class="col-md-12">
-          <div class="block-web">
-           
-         <div class="porlets-content">
-          <div class="adv-table editable-table ">
-                         
-                          <div class="clearfix">
-                              <div class="btn-group pull-right">
-                                  <button scr="" href="javascript:void(0);" class="btn btn-info" data-toggle="modal" data-target="#myModal"> <i class="glyphicon glyphicon-plus"></i> <span>Nuevo</span> </button>
-                              </div>
-                              
-                          </div>
-               
-               <form class="form-inline">
-                    <label class="sr-only" for="inlineFormCustomSelect">Parametro</label>
-                    <select class="form-control" id="inlineFormCustomSelect">
-                      <option selected>- Seleccione -</option>
-                      <option >.</option>
-                      <option >.</option>
-                      
-                    </select>
-                    <input type="text" class="form-control" id="inputBuscar" >
-                    <button type="submit" class="btn btn-info">Buscar</button>
-                  </form>
-          
-                          <div class="margin-top-10"></div>
-                          <div id="editable-sample_wrapper" class="dataTables_wrapper form-inline" role="grid">
-                              <div class="row">
-                                  <div class="col-lg-6">
-                                      <div class="dataTables_length" id="editable-sample_length">
-                                      <label><select class="form-control xsmall" aria-controls="editable-sample" size="1" name="editable-sample_length">
-                                              <option value="5">5</option>
-                                              <option value="15">15</option>
-                                              <option value="20">20</option>
-                                         </select> paginas</label></div></div><div class="col-lg-6">
-                                      <div id="editable-sample_filter" class="dataTables_filter">
-                              
-                            </div></div></div>
-                              <table aria-describedby="editable-sample_info" class="table" id="editable-sample">
-                              <thead>
-                                <tr>
-                                    <th>NIT</th>
-                                    <th>Razon social</th>
-                                    <th >E-mail</th> 
-                                    <th>Telefono</th>
-                                   <th>Fecha ingreso</th>
-                                    <th>Ciudad</th>
-                                    <th>Estado</th>
-                                    <th></th>
-                                   
-                                </tr>
-                               </thead>
-                              
-                          <tbody role="alert" aria-live="polite" aria-relevant="all" ><tr class="odd" >
-                            
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                <td >
-                                 <span class="pull-left">
-                                        <a href="#" class="btn btn-success" title="Ver Proveedor" onclick="ver('1129');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-eye-open"></i></a> 
-					<a href="#" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> 
-				        <a href="#" class="btn btn-danger" title="Borrar Proveedor" onclick="eliminar('1129')"><i class="glyphicon glyphicon-trash"></i> </a></span>
-                               
-                                </td>
-                              </tr>
-                              <tr class="even">
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                               <td >
-                                 <span class="pull-left">
-                                        <a href="#" class="btn btn-success" title="Ver Proveedor" onclick="ver('1129');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-eye-open"></i></a> 
-					<a href="#" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> 
-				       <a href="#" class="btn btn-danger" title="Borrar Proveedor" onclick="eliminar('1129')"><i class="glyphicon glyphicon-trash"></i> </a></span>
-                               
-                                </td>
-                                             
-                              </tr>
-                              <tr class="odd">
-                                 <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                  <td>.</td>
-                                <td >
-                                 <span class="pull-left">
-                                        <a href="#" class="btn btn-success" title="Ver Proveedor" onclick="ver('1129');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-eye-open"></i></a> 
-					<a href="#" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> 
-				       <a href="#" class="btn btn-danger" title="Borrar Proveedor" onclick="eliminar('1129')"><i class="glyphicon glyphicon-trash"></i> </a></span>
-                               
-                                </td>
-                             </tr>
-                            </tbody>
-                      </table>
-                         <div class="row">
-                       <div class="col-lg-6">
-                     <div id="editable-sample_info" class="dataTables_info"> Mostrando 1 a 10 de 12 Registro</div>
-                                          
-                      </div>
-                   <div class="col-lg-6">
-                     <div class="dataTables_paginate paging_bootstrap pagination"><ul>
-                    <li class="prev disabled"><a href="#">← Anterior</a></li>
-                    <li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li class="next"><a href="#">Siguiente → </a></li></ul></div></div></div></div>
-                      </div>
- 
-            </div><!--/porlets-content-->  
-          </div><!--/block-web--> 
-        </div><!--/col-md-12--> 
-      </div>
-  </div>
-      <!--\\\\\\\ container  end \\\\\\-->
-    </div>
-    <!--\\\\\\\ content panel end \\\\\\-->
-  </div>
-  <!--\\\\\\\ inner end\\\\\\-->
-</div>
-<!--\\\\\\\ wrapper end\\\\\\-->
-<!-- Modal -->
-
-
-
-<!-- sidebar chats -->
-
-
+      
+  
 
 
 <div class="panel-body">
@@ -179,7 +40,7 @@
         <div class="block-web">
             <div class="header ">
                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="content-header">Nuevo Proveedor</h3>
+              <h3 class="content-header">Modificar Proveedor</h3>
             </div>
             <div class="porlets-content">
               <div class="basic-wizard" id="progressWizard">
@@ -189,8 +50,8 @@
                   <li class=""><a data-toggle="tab" href="#Direc">Direccion</a></li>
                 </ul>
                 <div class="tab-content">
-                 <br>
-                  <div id="Empresa" class="tab-pane fade active in">
+                 
+                  <div id="Empresa"class="tab-pane fade active in">
                     <form class="form-horizontal">
                             <fieldset >
                         <div class="form-group">                                        
@@ -235,13 +96,17 @@
                             </div>
                           </div>
                         </div>
-                       <fieldset disabled>  
-                        <div class="form-group">
-                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Estado</label>
-                          <div class="col-sm-8">
-                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Activo">
-                          </div>
-                        </div>
+                       <fieldset>  
+                         <div class="form-group">                                        
+                          <label for="exampleInputName2" class="col-sm-3 control-label">Estado</label>
+                         <div class="col-sm-8">
+                          <select class="form-control">
+                            <option>- Selecione -</option>
+                            <option>Activo</option>
+                            <option>Inactivo</option>
+                          </select>
+                          </div>    
+                        </div>  
                           </fieldset>            
                       </form>                                        
                   </div>
@@ -269,8 +134,8 @@
                          <div class="col-sm-8">
                           <select class="form-control">
                             <option>- Selecione -</option>
-                            <option>Cédula de Ciudadanía</option>
-                            <option>Cédula de Extranjería</option>
+                            <option>Cedula de Ciudadania</option>
+                            <option>Cedula de Extranjera</option>
                           </select>
                           </div>    
                         </div>  
@@ -331,11 +196,11 @@
                        
                      </form>     
                   </div>
-                </div>
+                </div><!-- /tab-content -->
               </div>
                  <div class="modal-footer">
                             <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-info">Guardar</button>
+                            <button type="button" class="btn btn-info">Actializar</button>
                         </div>
               </div><!--/progressWizard-->
             </div><!--/porlets-content--> 
@@ -344,7 +209,7 @@
   </div>
   </div>
 </div>
-      
+
    
     <!--\\\\\\\ content panel end \\\\\\-->
     
