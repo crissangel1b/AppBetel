@@ -33,7 +33,8 @@
        
       </div>
       <!--\\\\\\\ contentpanel start\\\\\\-->      
-       <div class="row">
+       <div class="container clear_both padding_fix"> 
+      <div class="row">
         <div class="col-md-12">
           <div class="block-web">
            
@@ -99,9 +100,9 @@
                                   <td>.</td>
                                 <td >
                                  <span class="pull-left">
-                                        <a href="#" class="btn btn-success" title="Ver Proveedor" onclick="ver('1129');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-eye-open"></i></a> 
-					<a href="#" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> 
-				        <a href="#" class="btn btn-danger" title="Borrar Proveedor" onclick="eliminar('1129')"><i class="glyphicon glyphicon-trash"></i> </a></span>
+                                        <a href="#" class="btn btn-success" title="Ver" onclick="ver('1129');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-eye-open"></i></a> 
+					<a href="#" class="btn btn-info" title="modificar" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> 
+				        <a href="#" class="btn btn-danger" title="Borrar" onclick="eliminar('1129')"><i class="glyphicon glyphicon-trash"></i> </a></span>
                                
                                 </td>
                               </tr>
@@ -154,6 +155,7 @@
             </div><!--/porlets-content-->  
           </div><!--/block-web--> 
         </div><!--/col-md-12--> 
+      </div>
       </div>
   </div>
      
@@ -231,15 +233,12 @@
                   <div id="Datos" class="tab-pane">
                      <form class="form-horizontal"> 
                                         
-                    <div class="form-group">                                        
-                      <label for="exampleInputName2" class="col-sm-3 control-label">Nombres</label>
-                      <div class="col-sm-8">
-                       <div class="input-group">
-                       <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-                       <input type="text" class="form-control" id="exampleInputAmount" placeholder="Nombres">                                        
-                      </div>
-                     </div>    
-                    </div>                                                                                                              
+                   <div class="form-group">
+                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Nombre</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Nombre">
+                          </div>
+                        </div>                                                                                                            
                    <div class="form-group">
                       <label for="exampleInputEmail2" class="col-sm-3 control-label">Apellidos</label>
                       <div class="col-sm-8">
@@ -317,7 +316,12 @@
                   <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Ciudad ">
                   </div>
                </div> 
-
+               <div class="form-group">
+                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Pais</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Pais ">
+                          </div>
+                     </div> 
              </form>     
                   </div>
                 </div><!-- /tab-content -->

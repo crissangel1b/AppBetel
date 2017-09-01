@@ -25,15 +25,13 @@
   <br>
   <br> 
 
-      <div class="btn-group pull-right">
-          <button href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="btn btn-info" title="Editar Proveedor" onclick="obtener_datos('1129');" ><i class="glyphicon glyphicon-edit"></i></a> </button>
-      </div>
+     
       
   
 
 
 <div class="panel-body">
-<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal fade in" id="modifip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -113,15 +111,12 @@
                   <div id="Datos" class="tab-pane">
                      <form class="form-horizontal"> 
 
-                        <div class="form-group">                                        
-                          <label for="exampleInputName2" class="col-sm-3 control-label">Nombres</label>
+                       <div class="form-group">
+                          <label for="exampleInputEmail2" class="col-sm-3 control-label">Nombre</label>
                           <div class="col-sm-8">
-                           <div class="input-group">
-                           <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-                           <input type="text" class="form-control" id="exampleInputAmount" placeholder="Nombres">                                        
+                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Nombre">
                           </div>
-                         </div>    
-                        </div>                                                                                                              
+                        </div>                                                                                                                
                        <div class="form-group">
                           <label for="exampleInputEmail2" class="col-sm-3 control-label">Apellidos</label>
                           <div class="col-sm-8">
@@ -193,7 +188,12 @@
                           <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Ciudad ">
                           </div>
                        </div> 
-                       
+                           <div class="form-group">
+                          <label for="exampleInputEmail2" class="col-sm-3 control-label">pais</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Pais">
+                          </div>
+                       </div> 
                      </form>     
                   </div>
                 </div><!-- /tab-content -->
